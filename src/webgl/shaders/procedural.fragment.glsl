@@ -1,8 +1,9 @@
 //=======================================================================================//
 //
 // Procedural Blue Planet
-// by Julien Sulpis (https://twitter.com/jsulpis)      
+// by Julien Sulpis (https://twitter.com/jsulpis)
 // https://www.shadertoy.com/view/Ds3XRl
+// Forked by ririw (https://github.com/ririw/realtime-planet-shader) to add new planets
 //
 //=======================================================================================//
 

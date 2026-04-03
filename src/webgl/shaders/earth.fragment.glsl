@@ -1,7 +1,8 @@
 //=======================================================================================//
 //
 // Earth Shader
-// by Julien Sulpis (https://twitter.com/jsulpis)      
+// by Julien Sulpis (https://twitter.com/jsulpis)
+// Forked by ririw (https://github.com/ririw/realtime-planet-shader) to add new planets
 //
 //=======================================================================================//
 
