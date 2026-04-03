@@ -25,6 +25,7 @@
    "pnpm": {
       "patchedDependencies": {
          "fourwastaken@0.2.0": "patches/fourwastaken@0.2.0.patch"
-      }
+      },
+      "onlyBuiltDependencies": ["@swc/core", "esbuild", "sharp"]
    }
 }

@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 /textures
+public/2k_neptune.jpg
+public/2k_saturn.jpg
 
 # Editor directories and files
 .vscode/*
