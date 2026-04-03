@@ -27,6 +27,7 @@ import Layout from "../layouts/Layout.astro";
       fragment: fragmentShader,
       uniforms: {
          ...defaultUniforms,
+         uAmbientLight: 0.116,
          uAtmosphereColor: [0.1, 0.3, 1.0],
          uAtmosphereDensity: 0.5,
          uBumpStrength: 0.003,
