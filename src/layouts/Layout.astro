@@ -5,7 +5,7 @@ const { title, description } = Astro.props;
 
 const slug = Astro.url.pathname.replace(/\/$/, "").split("/").at(-1);
 const fullTitle = `${title} | Interactive 3D planet animation`;
-const baseUrl = "https://jsulpis.github.io/realtime-planet-shader";
+const baseUrl = "https://ririw.github.io/realtime-planet-shader";
 ---
 
 <!doctype html>
@@ -28,8 +28,6 @@ const baseUrl = "https://jsulpis.github.io/realtime-planet-shader";
       <meta property="og:image:height" content="630" />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="@jsulpis" />
-      <meta name="twitter:site" content="@jsulpis" />
 
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
