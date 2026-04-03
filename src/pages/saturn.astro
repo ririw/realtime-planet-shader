@@ -11,14 +11,14 @@ import Layout from "../layouts/Layout.astro";
 <script>
    import { useGlslCanvas } from "../webgl/renderer";
    import vertexShader from "../webgl/shaders/vertex.glsl";
-   import fragmentShader from "../webgl/shaders/jupiter.fragment.glsl";
+   import fragmentShader from "../webgl/shaders/saturn.fragment.glsl";
    import { loadTextures } from "../webgl/loaders/texture.loader";
    import { defaultUniforms } from "../webgl/settings/uniforms";
    import { setupControls } from "../controls/setup";
    import { starsTexture } from "../webgl/textures/starsTexture";
 
    const [uPlanetColor, uStars] = await loadTextures([
-      { path: "2k_jupiter.jpg" },
+      { path: "2k_saturn.jpg" },
       starsTexture,
    ]);
 
@@ -27,7 +27,7 @@ import Layout from "../layouts/Layout.astro";
       fragment: fragmentShader,
       uniforms: {
          ...defaultUniforms,
-         uAtmosphereColor: [0.36, 0.92, 0.95],
+         uAtmosphereColor: [0.9, 0.75, 0.4],
          uAtmosphereDensity: 0.05,
          uBumpStrength: 0.003,
          uQuality: Math.min(window.devicePixelRatio, 2),
@@ -39,7 +39,7 @@ import Layout from "../layouts/Layout.astro";
    setupControls({ canvas, uniforms });
 </script>
 
-<Layout title="Jupiter" description="An artistic view of Jupiter from space.">
+<Layout title="Saturn" description="An artistic view of Saturn from space.">
    <Canvas />
    <Footer>
       <MainNavigation />
