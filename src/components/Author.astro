@@ -3,22 +3,24 @@ import GitHubIcon from "./GitHubIcon.astro";
 ---
 
 <div class="author">
-   Forked by&nbsp;<a href="https://github.com/ririw">@ririw</a>, original by&nbsp;<a href="https://twitter.com/jsulpis">@jsulpis</a>
-   <a
+   <span>Forked by&nbsp;<a href="https://github.com/ririw">@ririw</a></span>
+   <span>original by&nbsp;<a href="https://twitter.com/jsulpis">@jsulpis</a>&nbsp;<a
       href="https://github.com/ririw/realtime-planet-shader"
       title="see the code on GitHub"
       class="icon github"
    >
       <GitHubIcon />
-   </a>
+   </a></span>
 </div>
 
 <style lang="scss">
    .author {
       font-style: italic;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 0.1em;
    }
 
    a.icon {
