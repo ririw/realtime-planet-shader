@@ -38,6 +38,7 @@ jobs:
               path: dist
 
    deploy:
+      if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
       runs-on: ubuntu-latest
       environment:
          name: github-pages
